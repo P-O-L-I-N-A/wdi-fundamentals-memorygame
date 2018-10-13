@@ -1,6 +1,27 @@
-console.log("User flipped " + "queen");
-console.log("User flipped " + "king");
-var cards = ["queen", "queen", "king", "king"];
+var cards = [
+{
+rank: 'queen',
+suit: 'hearts',
+cardImage: "images/queen-of-hearts.png"
+},
+{
+rank: 'queen',
+suit: 'diamonds',
+cardImage: "images/queen-of-diamonds.png"
+},
+{
+rank: 'king',
+suit: 'hearts',
+cardImage: "images/king-of-hearts.png"
+},
+{
+rank: 'king',
+suit: 'diamonds',
+cardImage: 	"images/king-of-diamonds.png"
+}
+];
+
+
 var cardOne = cards[0];
 var cardTwo = cards[2];
 var cardsInPlay = [];
@@ -9,8 +30,8 @@ cardsInPlay.push(cardTwo);
 
 
 //cardsInPlay could b subed 4 cardOne
-console.log('User flipped ' + cardsInPlay[0]);
-console.log('User flipped ' + cardsInPlay[1]);
+console.log('User flipped ' + cardsInPlay[0].rank + " " + cardsInPlay[0].cardImage + " " + cardsInPlay[0].suit);
+console.log('User flipped ' + cardsInPlay[1].rank + " " + cardsInPlay[1].cardImage + " " + cardsInPlay[1].suit);
 
 if(cardsInPlay.length === 2);
 if(cardsInPlay[0] === cardsInPlay[1]) { 
@@ -19,7 +40,18 @@ if(cardsInPlay[0] === cardsInPlay[1]) {
 }
 
 
+
+
+
+
+
+
+
  
+
+
+
+
 
 
 
